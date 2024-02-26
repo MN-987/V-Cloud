@@ -1,0 +1,18 @@
+.navindex
+{
+    z-index: 10000;
+}
+.navbar-toggler
+{
+    background-color: unset !important;
+}
+.navbtn
+{
+    color: #398DAD !important;
+    font-size:  1rem !important;
+    font-weight: 700;
+}
+.toggler
+{
+    box-shadow: unset !important;
+}

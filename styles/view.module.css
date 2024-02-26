@@ -1,0 +1,27 @@
+.main
+{
+    background-color: #EDF5FDF2;
+    position: relative;
+    overflow: hidden;
+}
+.main::after
+{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    height: 120vh;
+    right: 0px;
+    width: 20%;
+    background-color: #2272DF21;
+    transform: rotate(-10deg) translate(30%,-5%);
+}
+@media screen and (max-width:850px)
+{
+    .main::after
+    {
+        width: 35%;
+        height: 130vh;
+        transform: rotate(-10deg) translate(75%,0%);
+    }
+}

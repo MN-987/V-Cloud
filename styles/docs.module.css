@@ -1,0 +1,40 @@
+.main
+{
+    background-color: #EDF5FDF2;
+    position: relative;
+    overflow: hidden;
+}
+.main::after
+{
+    content:"";
+    position: absolute;
+    top: 0px;
+    bottom: 0%;
+    left: 0px;
+    width: 25%;
+    height: 120vh;
+    background-color: #b0cdf4;
+    transform: rotate(-15deg) translate(-35%,-10%);
+
+}
+.main::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    height: 15%;
+    background-color: #b0cdf4;
+    transform: rotate(5deg) translate(0%,75%);
+    z-index: 0;
+
+}
+@media screen and (max-width:500px)
+{
+    .main::after
+    {
+        width: 50%;
+        transform: rotate(-10deg) translate(-70%,-15%);
+    }
+}

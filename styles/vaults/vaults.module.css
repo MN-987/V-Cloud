@@ -1,0 +1,68 @@
+.main
+{
+    background-color:#EBF4FD8F;
+    position: relative;
+    overflow: hidden;
+}
+.main::after
+{
+    content: "";
+    position: absolute;
+ 
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    height : 30%;
+    background-color: #b0cdf4;
+    transform:  rotate(-15deg) translate(10%,100%)  ;
+}
+.spacer
+{
+    padding-top: 6rem;
+}
+.mainText
+{
+    font-size: 1.5rem;
+    font-weight:600 ;
+    color: #398DAD;
+    position: relative;
+}
+.mainText::after
+{
+    content: "";
+    position: absolute;
+   top: 52%;
+   right: 0%;
+   width: 40%;
+   height: 2PX;
+   background-color: #398DAD;
+}
+.mainText::before
+{
+    content: "";
+    position: absolute;
+   top: 52%;
+   left: 0%;
+   width: 40%;
+   height: 2PX;
+   background-color: #398DAD;
+}
+ 
+@media screen and (max-width:850px)
+{
+    .main::after
+    { 
+        height: 50vh;
+        width: 110%;
+        transform:  rotate(-15deg) translate(-10%,75%)  ;
+
+    }
+    .mainText::before{
+
+        width: unset;
+    }
+    .mainText::after{
+
+        width: unset;
+    }
+}
